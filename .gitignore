@@ -1,0 +1,16 @@
+# Archivos y carpetas que NO deben versionarse en un proyecto dbt
+
+# Configuración local de dbt
+profiles.yml
+
+# Directorios generados automáticamente por dbt
+target/
+dbt_packages/
+logs/
+
+# Archivos del sistema / editor
+.DS_Store
+.idea/
+.vscode/
+*.pyc
+__pycache__/
