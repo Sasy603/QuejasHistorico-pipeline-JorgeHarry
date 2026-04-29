@@ -1,0 +1,13 @@
+BT_DEMO:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 16
+      account: CNFYYEH-MRB07138
+      user: HARRYBAHRU
+      database: QUEJAS_AGRADECIMIENTOS_MADRID_HISTORICO
+      warehouse: RETAILCO_WH
+      schema: RAW
+      password: Angelcorella23/
+      role: ACCOUNTADMIN

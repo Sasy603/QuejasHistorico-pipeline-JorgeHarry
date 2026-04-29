@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: RAW
+    database: QUEJAS_AGRADECIMIENTOS_MADRID_HISTORICO
+    tables:
+      - name: FACT_QUEJAS
+      - name: FACT_AGRADECIMIENTOS
+      - name: FACT_SUGERENCIAS
+
+models:
+  - name: stg_fact_quejas
+    tests:
+      - not_null:
+          column_name: id_registro
+      - unique:
+          column_name: id_registro
+
+  - name: stg_fact_agradecimientos
+    tests:
+      - not_null:
+          column_name: id_registro
+      - unique:
+          column_name: id_registro
+
+  - name: stg_fact_sugerencias
+    tests:
+      - not_null:
+          column_name: id_registro
+      - unique:
+          column_name: id_registro
+
+
